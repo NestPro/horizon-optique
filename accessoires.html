@@ -18,6 +18,48 @@
     <title>Accessoires || Horizon Optique</title>
 </head>
 
+<style>
+    .contain {
+        position: relative;
+      }
+      
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .contain:hover .image {
+        opacity: 0.3;
+      }
+      
+      .contain:hover .middle {
+        opacity: 1;
+      }
+      
+      .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+      
+</style>
+
 <body>
     <!--==================== Header ====================-->
     <div class="top-bar-style2">
@@ -41,47 +83,8 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <!-- Nav menu -->
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="#" /></a>
-                        <button class="navbar-toggler nav-custome1" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
-                                navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="index.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Accueil <!--<i class="fas fa-plus"></i>-->
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="prestations.html" id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Nos prestations
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="collections.html" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false"> 
-                                        Nos collections <!--<i class="fas fa-plus"></i>-->
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="accessoires.html" id="navbarDropdown3" role="button" aria-haspopup="true" aria-expanded="false"> 
-                                        Nos accessoires <!--<i class="fas fa-plus"></i>-->
-                                    </a>
-                                </li>
-                                
-                                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="contact.html" id="navbarDropdown4" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Contact
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!--//End Nav menu -->
+                <div class="col-md-12 menuHorizon">
+                    
                 </div>
             </div>
         </div>
@@ -100,12 +103,10 @@
                         <h2>Accessoires</h2>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <!--//End Sub header -->
-    <!--//End Header -->
-    <!--==================== Our Doctors ====================-->
     <section class="space">
         <div class="container container-custom">
             <div class="row">
@@ -113,107 +114,432 @@
                     <div class="sub-title_center">
                         <span>---- Nos Accessoires ----</span>
                         <h2>Nos Accessoires de Verres</h2>
+                        <ul class="nav justify-content-center mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#lunettes" onclick="filterSelection('all')">Tout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lunettes" onclick="filterSelection('fleo')">FLEO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#lunettes" onclick="filterSelection('henryjulien')">HENRY JULIEN</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                          <input class="form-control mr-sm-2" type="search" id="search" placeholder="Chercher" aria-label="Chercher">
+                          <input type="hidden" value="1" id="page">
+                        </form>
                     </div>
+
                 </div>
+
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
+            <div class="row" id="lunettes">
+
+                <!-- <div class="container">
+                    <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                      <div class="text">John Doe</div>
+                    </div>
+                </div> -->
+               
+                <div class="col-md-6 col-lg-3 lunette fleo page1" >
+                    <div class="team-img_block yellow contain">
                         <div class="team-img-socila-block">
-                            <img src="images/new/verre.jpg" class="img-fluid" alt="#" />
+                            <img src="images/lunettes/FLEO/AGOSTINO-C01.jpg" class="img-fluid image" alt="AGOSTINO C01" />
                         </div>
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
+                        <div class="middle">
+                            <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                        </div>
+                        <h4>AGOSTINO</h4>
+                        <p>C01</p>
                     </div>
+                    <!-- <div class="overlay">
+                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                    </div> -->
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block green">
-                        <img src="images/new/verre1.jpg" class="img-fluid" alt="#">
-                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block blue">
-                        <img src="images/new/verre2.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
-                        <img src="images/new/verre3.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
+                
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/new/verre.jpg" class="img-fluid" alt="#" />
+                            <img src="images/lunettes/FLEO/ALESSIO-C01.jpg" class="img-fluid image" alt="ALESSIO C01">
                         </div>
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
+                        <div class="middle">
+                            <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                        </div>
+                        <h4>ALESSIO C01</h4>
+                        <p>C01</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block green">
-                        <img src="images/new/verre1.jpg" class="img-fluid" alt="#">
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active contain">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ALWINE-C01.jpg" class="img-fluid image" alt="ALWINE C01">
+                                    </div>   
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                    -->
+                                    <h4>ALWINE</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item contain">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ALWINE-C02.jpg" class="img-fluid image" alt="ALWINE C02">
+                                    </div>   
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                    -->
+                                    <h4>ALWINE</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item contain">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ALWINE-C03.jpg" class="img-fluid image" alt="ALWINE C03">
+                                    </div>
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                       -->
+                                    <h4>ALWINE</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <!-- <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 28px 28px 28px 28px; height: 3vw">Commender</a>
+                            </div>  -->
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
                         
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block blue">
-                        <img src="images/new/verre2.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C01.jpg" class="img-fluid image" alt="ANGY C01">
+                                    </div>                      
+                                     <h4>ANGY</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C02.jpg" class="img-fluid image" alt="ANGY C02">
+                                    </div>                      
+                                     <h4>ANGY</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C03.jpg" class="img-fluid image" alt="ANGY C03">
+                                    </div>                      
+                                     <h4>ANGY</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
-                        <img src="images/new/verre3.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/CARMELA-C03.jpg" class="img-fluid image" alt="CARMELA C03">
+                                    </div>                      
+                                     <h4>CARMELA</h4>
+                                    <p>C03</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/CARMELA-C02.jpg" class="img-fluid image" alt="CARMELA C02">
+                                    </div>                      
+                                     <h4>CARMELA</h4>
+                                    <p>C02</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/EDDY-C01.jpg" class="img-fluid image" alt="EDDY C01">
+                                    </div>                      
+                                    <h4>EDDY</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/EDDY-C02.jpg" class="img-fluid image" alt="EDDY C02">
+                                    </div>                      
+                                    <h4>EDDY</h4>
+                                    <p>C02</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block green" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/GUILIA-C02.jpg" class="img-fluid image" alt="GUILIA C02">
+                                    </div>                      
+                                    <h4>GUILIA</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/GUILIA-C03.jpg" class="img-fluid image" alt="GUILIA C03">
+                                    </div>                      
+                                    <h4>GUILIA</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/IVAR-C01.jpg" class="img-fluid image" alt="IVAR C01">
+                                    </div>                      
+                                    <h4>IVAR</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/IVAR-C02.jpg" class="img-fluid image" alt="IVAR C02">
+                                    </div>                      
+                                    <h4>IVAR</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/IVAR-C03.jpg" class="img-fluid image" alt="IVAR C03">
+                                    </div>                      
+                                    <h4>IVAR</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/JULY-C01.jpg" class="img-fluid image" alt="JULY C01">
+                                    </div>                      
+                                    <h4>JULY</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/JULY-C03.jpg" class="img-fluid image" alt="JULY C03">
+                                    </div>                      
+                                    <h4>JULY</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C01.jpg" class="img-fluid image" alt="RAGNARD C01">
+                                    </div>                      
+                                    <h4>RAGNARD</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C02.jpg" class="img-fluid image" alt="RAGNARD C02">
+                                    </div>                      
+                                    <h4>RAGNARD</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C03.jpg" class="img-fluid image" alt="RAGNARD C03">
+                                    </div>                      
+                                    <h4>RAGNARD</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/new/verre.jpg" class="img-fluid" alt="#" />
+                            <img src="images/lunettes/FLEO/SIGURD-C02.jpg" class="img-fluid image" alt="SIGURD C02">
+                        </div> 
+                        <div class="middle">
+                            <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                        </div>                     
+                        <h4>SIGURD</h4>
+                        <p>C02</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/THOR-C01.jpg" class="img-fluid image" alt="THOR C01">
+                                    </div>                      
+                                    <h4>THOR</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/THOR-C03.jpg" class="img-fluid image" alt="THOR C03">
+                                    </div>                      
+                                    <h4>THOR</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
+
+                <div class="col-md-6 col-lg-3 lunette fleo page2">
+                    <div class="team-img_block green contain">
+                        <div class="team-img-socila-block">
+                            <img src="images/lunettes/FLEO/WATSON-C02.jpg" class="img-fluid image" alt="WATSON C02">
+                        </div>   
+                        <div class="middle">
+                            <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                        </div>                   
+                        <h4>WATSON</h4>
+                        <p>C02</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette henryjulien page2">
+                    <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04.jpg" class="img-fluid image" alt="ARPE 443-C5301R04">
+                                    </div>                      
+                                    <h4>ARPE</h4>
+                                    <p>443-C5301R04</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04 (2).jpg" class="img-fluid image" alt="ARPE 443-C5301R04">
+                                    </div>                      
+                                    <h4>ARPE</h4>
+                                    <p>443-C5301R04</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette henryjulien page2">
+                    <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01.jpg" class="img-fluid image" alt="ARPEGE435 C53F01">
+                                    </div>                      
+                                    <h4>ARPEGE435</h4>
+                                    <p>C5301R04</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01 (2).jpg" class="img-fluid image" alt="ARPEGE435 C53F01">
+                                    </div>                      
+                                    <h4>ARPE</h4>
+                                    <p>C5301R04</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div class="team-img_block green">
-                        <img src="images/new/verre1.jpg" class="img-fluid" alt="#">
-                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
+                        <div class="team-img-socila-block">
+                            <img src="images/lunettes/HENRY JULLIEN/ARPEGE443-C53F01.jpg" class="img-fluid image" alt="ARPEGE443 C53F01">
+                        </div>                      
+                        <h4>ARPEGE443</h4>
+                        <p>C5301R04</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block blue">
-                        <img src="images/new/verre2.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="team-img_block yellow">
-                        <img src="images/new/verre3.jpg" class="img-fluid" alt="#">                        
-                        <h4>Dr. Mary Joe</h4>
-                        <p>Cardiologist Specialist</p>
-                    </div>
-                </div>
+
+                <nav aria-label="Voir plus de lunettes" class="col-md-12 col-lg-12">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#lunettes">Précédant</a></li>
+                    <li class="page-item"><a class="page-link" href="#lunettes" onclick="filterSelection('page1')">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#lunettes" onclick="filterSelection('page2')">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#lunettes" onclick="filterSelection('page3')">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#lunettes">Suivant</a></li>
+                  </ul>
+                </nav>
             </div>
         </div>
     </section>
@@ -221,75 +547,6 @@
     
     <!--==================== Footer ====================-->
     <footer>
-        <div class="container container-custom">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-5">
-                    <div class="foot-contact-block">
-                        <img src="images/foot-logo.png" class="img-fluid" alt="#" />
-                        <!--<p>
-                        </p>-->
-                        <a href="tel:22960809191">
-                            <h4><i class="fas fa-phone"></i>(229)60809191</h4>
-                        </a>
-                        <a href="mailto:contact@horizonoptique.com">
-                            <h4><i class="far fa-envelope"></i>contact@horizonoptique.com</h4>
-                        </a>
-                        <a href="tel:22995710522">
-                            <h4><i class="fab fa-whatsapp"></i>(229)95710522</h4>
-                        </a>
-                        <a href="">
-                            <h4><i class="fa fa-location-arrow"></i>Agontikon à coté de l'ECOBANK</h4>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 offset-lg-1">
-                    <div class="foot-link-box">
-                        <h4>Liens Rapides</h4>
-                        <ul>
-                            <li>
-                                <a href="prestations.html"><i class="fas fa-angle-double-right"></i>Nos Prestations</a>
-                            </li>
-                            <li>
-                                <a href="collections.html"><i class="fas fa-angle-double-right"></i>Nos Collections</a>
-                            </li>
-                            <li>
-                                <a href="accessoires.html"><i class="fas fa-angle-double-right"></i>Nos Accessoires</a>
-                            </li>
-                            <li>
-                                <a href="contact.html"><i class="fas fa-angle-double-right"></i>Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="foot-link-box">
-                        <h4>Nos Prestations</h4>
-                        <ul>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-double-right"></i>Entretien</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-double-right"></i>Traitement</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-double-right"></i>Monture</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fas fa-angle-double-right"></i>Verres</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="text-align: center;">
-                <div class="col-md-12">
-                    <div class="copyright">
-                        <p>Copyright © 2020 HORIZON OPTIQUE | Réalisé par <a href="https://easycom-dev.com">EasyCom Solutions</a></p>
-                        <a href="#" id="scroll"><i class="fas fa-angle-double-up"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </footer>
     <!--//End Footer -->
     <!-- Optional JavaScript -->
@@ -301,6 +558,32 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Script Js -->
     <script src="js/script.js"></script>
+    <script src="js/template.js"></script>
+    <script>
+    $(document).ready(function(){
+        filterSelection('page1');
+        $("#search").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#lunettes .lunette").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+
+    function filterSelection(c) {
+      if(c != '' && c != 'all'){
+        $('.lunette').hide(500);
+        $('.'+c).show(500);
+      }else{
+        var page = $('#page').val();
+        $('.lunette').hide(500);
+        $('.page'+page).show(500);
+      }
+    }
+    function setPage(p){
+        $('#page').val(p);
+    }
+</script>
 </body>
 
 </html>
