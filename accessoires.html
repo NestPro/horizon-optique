@@ -18,6 +18,47 @@
     <title>Accessoires || Horizon Optique</title>
 </head>
 
+<style>
+    .contain {
+        position: relative;
+    }
+    
+    .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+    
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .contain:hover .image {
+        opacity: 0.3;
+    }
+    
+    .contain:hover .middle {
+        opacity: 1;
+    }
+    
+    .text {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+</style>
+
 <body>
     <!--==================== Header ====================-->
     <div class="top-bar-style2">
@@ -93,19 +134,37 @@
 
             </div>
             <div class="row" id="lunettes">
+
+                <!-- <div class="container">
+                    <img src="img_avatar.png" alt="Avatar" class="image" style="width:100%">
+                    <div class="middle">
+                      <div class="text">John Doe</div>
+                    </div>
+                </div> -->
+
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
-                    <div class="team-img_block yellow">
+                    <div class="team-img_block yellow contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/FLEO/AGOSTINO-C01.jpg" class="img-fluid" alt="AGOSTINO C01" />
+                            <img src="images/lunettes/FLEO/AGOSTINO-C01.jpg" class="img-fluid image" alt="AGOSTINO C01" />
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commander</a>
                         </div>
                         <h4>AGOSTINO</h4>
                         <p>C01</p>
                     </div>
+                    <!-- <div class="overlay">
+                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
+                    </div> -->
                 </div>
+
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/FLEO/ALESSIO-C01.jpg" class="img-fluid" alt="ALESSIO C01">
+                            <img src="images/lunettes/FLEO/ALESSIO-C01.jpg" class="img-fluid image" alt="ALESSIO C01">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>ALESSIO C01</h4>
                         <p>C01</p>
@@ -114,228 +173,260 @@
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
-                                <div class="carousel-item active">
+                                <div class="carousel-item active contain">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ALWINE-C01.jpg" class="img-fluid" alt="ALWINE C01">
+                                        <img src="images/lunettes/FLEO/ALWINE-C01.jpg" class="img-fluid image" alt="ALWINE C01">
                                     </div>
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                    -->
                                     <h4>ALWINE</h4>
                                     <p>C01</p>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item contain">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ALWINE-C02.jpg" class="img-fluid" alt="ALWINE C02">
+                                        <img src="images/lunettes/FLEO/ALWINE-C02.jpg" class="img-fluid image" alt="ALWINE C02">
                                     </div>
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                    -->
                                     <h4>ALWINE</h4>
                                     <p>C02</p>
                                 </div>
-                                <div class="carousel-item">
+                                <div class="carousel-item contain">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ALWINE-C03.jpg" class="img-fluid" alt="ALWINE C03">
+                                        <img src="images/lunettes/FLEO/ALWINE-C03.jpg" class="img-fluid image" alt="ALWINE C03">
                                     </div>
+                                    <!-- <div class="middle">
+                                        <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 25px 25px 25px 25px;">Commender</a>
+                                    </div>                       -->
                                     <h4>ALWINE</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
+                            <!-- <div class="middle">
+                                <a  href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-warning" style="border-radius: 28px 28px 28px 28px; height: 3vw">Commender</a>
+                            </div>  -->
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commander</a>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 lunette fleo page1">
+                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
+                        <div class="carousel-inner contain">
+                            <div class="">
+                                <div class="carousel-item active">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C01.jpg" class="img-fluid image" alt="ANGY C01">
+                                    </div>
+                                    <h4>ANGY</h4>
+                                    <p>C01</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C02.jpg" class="img-fluid image" alt="ANGY C02">
+                                    </div>
+                                    <h4>ANGY</h4>
+                                    <p>C02</p>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="team-img-socila-block ">
+                                        <img src="images/lunettes/FLEO/ANGY-C03.jpg" class="img-fluid image" alt="ANGY C03">
+                                    </div>
+                                    <h4>ANGY</h4>
+                                    <p>C03</p>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ANGY-C01.jpg" class="img-fluid" alt="ANGY C01">
-                                    </div>
-                                    <h4>ANGY</h4>
-                                    <p>C01</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ANGY-C02.jpg" class="img-fluid" alt="ANGY C02">
-                                    </div>
-                                    <h4>ANGY</h4>
-                                    <p>C02</p>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/ANGY-C03.jpg" class="img-fluid" alt="ANGY C03">
-                                    </div>
-                                    <h4>ANGY</h4>
-                                    <p>C03</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 lunette fleo page1">
-                    <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="">
-                                <div class="carousel-item active">
-                                    <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/CARMELA-C03.jpg" class="img-fluid" alt="CARMELA C03">
+                                        <img src="images/lunettes/FLEO/CARMELA-C03.jpg" class="img-fluid image" alt="CARMELA C03">
                                     </div>
                                     <h4>CARMELA</h4>
                                     <p>C03</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/CARMELA-C02.jpg" class="img-fluid" alt="CARMELA C02">
+                                        <img src="images/lunettes/FLEO/CARMELA-C02.jpg" class="img-fluid image" alt="CARMELA C02">
                                     </div>
                                     <h4>CARMELA</h4>
                                     <p>C02</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/EDDY-C01.jpg" class="img-fluid" alt="EDDY C01">
+                                        <img src="images/lunettes/FLEO/EDDY-C01.jpg" class="img-fluid image" alt="EDDY C01">
                                     </div>
                                     <h4>EDDY</h4>
                                     <p>C01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/EDDY-C02.jpg" class="img-fluid" alt="EDDY C02">
+                                        <img src="images/lunettes/FLEO/EDDY-C02.jpg" class="img-fluid image" alt="EDDY C02">
                                     </div>
                                     <h4>EDDY</h4>
                                     <p>C02</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block green" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/GUILIA-C02.jpg" class="img-fluid" alt="GUILIA C02">
+                                        <img src="images/lunettes/FLEO/GUILIA-C02.jpg" class="img-fluid image" alt="GUILIA C02">
                                     </div>
                                     <h4>GUILIA</h4>
                                     <p>C02</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/GUILIA-C03.jpg" class="img-fluid" alt="GUILIA C03">
+                                        <img src="images/lunettes/FLEO/GUILIA-C03.jpg" class="img-fluid image" alt="GUILIA C03">
                                     </div>
                                     <h4>GUILIA</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/IVAR-C01.jpg" class="img-fluid" alt="IVAR C01">
+                                        <img src="images/lunettes/FLEO/IVAR-C01.jpg" class="img-fluid image" alt="IVAR C01">
                                     </div>
                                     <h4>IVAR</h4>
                                     <p>C01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/IVAR-C02.jpg" class="img-fluid" alt="IVAR C02">
+                                        <img src="images/lunettes/FLEO/IVAR-C02.jpg" class="img-fluid image" alt="IVAR C02">
                                     </div>
                                     <h4>IVAR</h4>
                                     <p>C02</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/IVAR-C03.jpg" class="img-fluid" alt="IVAR C03">
+                                        <img src="images/lunettes/FLEO/IVAR-C03.jpg" class="img-fluid image" alt="IVAR C03">
                                     </div>
                                     <h4>IVAR</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/JULY-C01.jpg" class="img-fluid" alt="JULY C01">
+                                        <img src="images/lunettes/FLEO/JULY-C01.jpg" class="img-fluid image" alt="JULY C01">
                                     </div>
                                     <h4>JULY</h4>
                                     <p>C01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/JULY-C03.jpg" class="img-fluid" alt="JULY C03">
+                                        <img src="images/lunettes/FLEO/JULY-C03.jpg" class="img-fluid image" alt="JULY C03">
                                     </div>
                                     <h4>JULY</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/RAGNARD-C01.jpg" class="img-fluid" alt="RAGNARD C01">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C01.jpg" class="img-fluid image" alt="RAGNARD C01">
                                     </div>
                                     <h4>RAGNARD</h4>
                                     <p>C01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/RAGNARD-C02.jpg" class="img-fluid" alt="RAGNARD C02">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C02.jpg" class="img-fluid image" alt="RAGNARD C02">
                                     </div>
                                     <h4>RAGNARD</h4>
                                     <p>C02</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/RAGNARD-C03.jpg" class="img-fluid" alt="RAGNARD C03">
+                                        <img src="images/lunettes/FLEO/RAGNARD-C03.jpg" class="img-fluid image" alt="RAGNARD C03">
                                     </div>
                                     <h4>RAGNARD</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/FLEO/SIGURD-C02.jpg" class="img-fluid" alt="SIGURD C02">
+                            <img src="images/lunettes/FLEO/SIGURD-C02.jpg" class="img-fluid image" alt="SIGURD C02">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>SIGURD</h4>
                         <p>C02</p>
@@ -344,32 +435,37 @@
 
                 <div class="col-md-6 col-lg-3 lunette fleo page1">
                     <div id="" class="carousel slide team-img_block yellow" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/THOR-C01.jpg" class="img-fluid" alt="THOR C01">
+                                        <img src="images/lunettes/FLEO/THOR-C01.jpg" class="img-fluid image" alt="THOR C01">
                                     </div>
                                     <h4>THOR</h4>
                                     <p>C01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/FLEO/THOR-C03.jpg" class="img-fluid" alt="THOR C03">
+                                        <img src="images/lunettes/FLEO/THOR-C03.jpg" class="img-fluid image" alt="THOR C03">
                                     </div>
                                     <h4>THOR</h4>
                                     <p>C03</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page2">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/FLEO/WATSON-C02.jpg" class="img-fluid" alt="WATSON C02">
+                            <img src="images/lunettes/FLEO/WATSON-C02.jpg" class="img-fluid image" alt="WATSON C02">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>WATSON</h4>
                         <p>C02</p>
@@ -377,9 +473,12 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/ARABESQUE-C53C73.jpg" class="img-fluid" alt="ARABESQUE C53C73">
+                            <img src="images/lunettes/HENRY JULLIEN/ARABESQUE-C53C73.jpg" class="img-fluid image" alt="ARABESQUE C53C73">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>ARABESQUE</h4>
                         <p>C53C73</p>
@@ -388,163 +487,176 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04 (2).jpg" class="img-fluid" alt="ARPE C5301R04">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04 (2).jpg" class="img-fluid image" alt="ARPE C5301R04">
                                     </div>
                                     <h4>ARPE</h4>
                                     <p>C5301R04</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04.jpg" class="img-fluid" alt="ARPE C5301R04">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPE-443-C5301R04.jpg" class="img-fluid image" alt="ARPE C5301R04">
                                     </div>
                                     <h4>ARPE</h4>
                                     <p>C5301R04</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01 (2).jpg" class="img-fluid" alt="ARPEGE C53F01">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01 (2).jpg" class="img-fluid image" alt="ARPEGE C53F01">
                                     </div>
                                     <h4>ARPEGE</h4>
                                     <p>C53F01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01.jpg" class="img-fluid" alt="ARPEGE C53F01">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE435-C53F01.jpg" class="img-fluid image" alt="ARPEGE C53F01">
                                     </div>
                                     <h4>ARPEGE</h4>
                                     <p>C53F01</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE443-C53F01.jpg" class="img-fluid" alt="ARPEGE C53F01">
+                                        <img src="images/lunettes/HENRY JULLIEN/ARPEGE443-C53F01.jpg" class="img-fluid image" alt="ARPEGE C53F01">
                                     </div>
                                     <h4>ARPEGE</h4>
                                     <p>C53F01</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA02-C16C53.jpg" class="img-fluid" alt="CABIRIA C16C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA02-C16C53.jpg" class="img-fluid image" alt="CABIRIA C16C53">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C16C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA02-C0274.jpg" class="img-fluid" alt="CABIRIA C0274">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA02-C0274.jpg" class="img-fluid image" alt="CABIRIA C0274">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C0274</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA04-75.png" class="img-fluid" alt="CABIRIA C75">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA04-75.png" class="img-fluid image" alt="CABIRIA C75">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C75</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA04-C84.jpg" class="img-fluid" alt="CABIRIA C84">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA04-C84.jpg" class="img-fluid image" alt="CABIRIA C84">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C84</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA06-C16.jpg" class="img-fluid" alt="CABIRIA C16">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA06-C16.jpg" class="img-fluid image" alt="CABIRIA C16">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C16</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA08-C2853.png" class="img-fluid" alt="CABIRIA C2853">
+                                        <img src="images/lunettes/HENRY JULLIEN/CABIRIA08-C2853.png" class="img-fluid image" alt="CABIRIA C2853">
                                     </div>
                                     <h4>CABIRIA</h4>
                                     <p>C2853</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CAPFERRET-C53.png" class="img-fluid" alt="CAPFERRET C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/CAPFERRET-C53.png" class="img-fluid image" alt="CAPFERRET C53">
                                     </div>
                                     <h4>CAPFERRET</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/CAPFERRET-C56.png" class="img-fluid" alt="CAPFERRET C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/CAPFERRET-C56.png" class="img-fluid image" alt="CAPFERRET C56">
                                     </div>
                                     <h4>CAPFERRET</h4>
                                     <p>C56</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/COVENTRY01-C53 (2).jpg" class="img-fluid" alt="COVENTRY C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/COVENTRY01-C53 (2).jpg" class="img-fluid image" alt="COVENTRY C53">
                                     </div>
                                     <h4>COVENTRY</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/COVENTRY01-C53.jpg" class="img-fluid" alt="COVENTRY C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/COVENTRY01-C53.jpg" class="img-fluid image" alt="COVENTRY C53">
                                     </div>
                                     <h4>COVENTRY</h4>
                                     <p>C53</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette fleo page2">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/CYRENA-C56.jpg" class="img-fluid" alt="CYRENA C56">
+                            <img src="images/lunettes/HENRY JULLIEN/CYRENA-C56.jpg" class="img-fluid image" alt="CYRENA C56">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>CYRENA</h4>
                         <p>C56</p>
@@ -553,63 +665,70 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/DECLARATION02-C56.jpg" class="img-fluid" alt="DECLARATION C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/DECLARATION02-C56.jpg" class="img-fluid image" alt="DECLARATION C56">
                                     </div>
                                     <h4>COVENTRY</h4>
                                     <p>C56</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/DECLARATION10-C53.jpg" class="img-fluid" alt="DECLARATION C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/DECLARATION10-C53.jpg" class="img-fluid image" alt="DECLARATION C53">
                                     </div>
                                     <h4>COVENTRY</h4>
                                     <p>C53</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/DELCO09-C53.jpg" class="img-fluid" alt="DELCO C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/DELCO09-C53.jpg" class="img-fluid image" alt="DELCO C53">
                                     </div>
                                     <h4>DELCO09</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/DELCO13-C53.jpg" class="img-fluid" alt="DELCO C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/DELCO13-C53.jpg" class="img-fluid image" alt="DELCO C53">
                                     </div>
                                     <h4>DELCO</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/DELCO09-C56.jpg" class="img-fluid" alt="DELCO C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/DELCO09-C56.jpg" class="img-fluid image" alt="DELCO C56">
                                     </div>
                                     <h4>DELCO</h4>
                                     <p>C56</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/ELLEGE-C74.jpg" class="img-fluid" alt="ELLEGE C74">
+                            <img src="images/lunettes/HENRY JULLIEN/ELLEGE-C74.jpg" class="img-fluid image" alt="ELLEGE C74">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>ELLEGE</h4>
                         <p>C74</p>
@@ -617,9 +736,12 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page2">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/GEKO429-C53R01.jpg" class="img-fluid" alt="GEKO C53R01">
+                            <img src="images/lunettes/HENRY JULLIEN/GEKO429-C53R01.jpg" class="img-fluid image" alt="GEKO C53R01">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>GEKO</h4>
                         <p>C53R01</p>
@@ -627,9 +749,12 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/JUMP-02-C74.jpg" class="img-fluid" alt="JUMP C74">
+                            <img src="images/lunettes/HENRY JULLIEN/JUMP-02-C74.jpg" class="img-fluid image" alt="JUMP C74">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>JUMP</h4>
                         <p>C74</p>
@@ -637,9 +762,12 @@
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/KHEOPS-C53.jpg" class="img-fluid" alt="KHEOPS C53">
+                            <img src="images/lunettes/HENRY JULLIEN/KHEOPS-C53.jpg" class="img-fluid image" alt="KHEOPS C53">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>KHEOPS</h4>
                         <p>C53</p>
@@ -648,121 +776,131 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE04-C53P06 (2).jpg" class="img-fluid" alt="LIBERTINE C53P06">
+                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE04-C53P06 (2).jpg" class="img-fluid image" alt="LIBERTINE C53P06">
                                     </div>
                                     <h4>LIBERTINE</h4>
                                     <p>C53P06</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE04-C53P06.jpg" class="img-fluid" alt="LIBERTINE C53P06">
+                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE04-C53P06.jpg" class="img-fluid image" alt="LIBERTINE C53P06">
                                     </div>
                                     <h4>LIBERTINE</h4>
                                     <p>C53P06</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE360-C53P06.jpg" class="img-fluid" alt="LIBERTINE C53P06">
+                                        <img src="images/lunettes/HENRY JULLIEN/LIBERTINE360-C53P06.jpg" class="img-fluid image" alt="LIBERTINE C53P06">
                                     </div>
                                     <h4>LIBERTINE</h4>
                                     <p>C53P06</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15000-C56.png" class="img-fluid" alt="MELROSE C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15000-C56.png" class="img-fluid image" alt="MELROSE C56">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C56</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15416-O-C18.jpg" class="img-fluid" alt="MELROSE C18">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15416-O-C18.jpg" class="img-fluid image" alt="MELROSE C18">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C18</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15438-O-C91.jpg" class="img-fluid" alt="MELROSE C91">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15438-O-C91.jpg" class="img-fluid image" alt="MELROSE C91">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C91</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15442-O-C38.jpg" class="img-fluid" alt="MELROSE C38">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15442-O-C38.jpg" class="img-fluid image" alt="MELROSE C38">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C38</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15444-O-C21.jpg" class="img-fluid" alt="MELROSE C21">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15444-O-C21.jpg" class="img-fluid image" alt="MELROSE C21">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C21</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15446-C28.png" class="img-fluid" alt="MELROSE C28">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE15446-C28.png" class="img-fluid image" alt="MELROSE C28">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C28</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE16000-C92.png" class="img-fluid" alt="MELROSE C92">
+                                        <img src="images/lunettes/HENRY JULLIEN/MELROSE16000-C92.png" class="img-fluid image" alt="MELROSE C92">
                                     </div>
                                     <h4>MELROSE</h4>
                                     <p>C92</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/OXFORD-C56P02 (2).png" class="img-fluid" alt="OXFORD C56P02">
+                                        <img src="images/lunettes/HENRY JULLIEN/OXFORD-C56P02 (2).png" class="img-fluid image" alt="OXFORD C56P02">
                                     </div>
                                     <h4>OXFORD</h4>
                                     <p>C56P02</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/OXFORD-C56P02.jpg" class="img-fluid" alt="OXFORD C56P02">
+                                        <img src="images/lunettes/HENRY JULLIEN/OXFORD-C56P02.jpg" class="img-fluid image" alt="OXFORD C56P02">
                                     </div>
                                     <h4>OXFORD</h4>
                                     <p>C56P02</p>
                                 </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
-                    <div class="team-img_block green">
+                    <div class="team-img_block green contain">
                         <div class="team-img-socila-block">
-                            <img src="images/lunettes/HENRY JULLIEN/PACIFIC0353-C53.png" class="img-fluid" alt="PACIFIC C53">
+                            <img src="images/lunettes/HENRY JULLIEN/PACIFIC0353-C53.png" class="img-fluid image" alt="PACIFIC C53">
+                        </div>
+                        <div class="middle">
+                            <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-primary btn-md">Commender</a>
                         </div>
                         <h4>PACIFIC</h4>
                         <p>C53</p>
@@ -771,95 +909,100 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHT03-O-C38.jpg" class="img-fluid" alt="SKYLIGHT C38">
+                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHT03-O-C38.jpg" class="img-fluid image" alt="SKYLIGHT C38">
                                     </div>
                                     <h4>SKYLIGHT</h4>
                                     <p>C38</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (2).jpg" class="img-fluid" alt="SKYLIGHTB07 C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (2).jpg" class="img-fluid image" alt="SKYLIGHTB07 C56">
                                     </div>
                                     <h4>SKYLIGHTB07</h4>
                                     <p>C56</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (3).jpg" class="img-fluid" alt="SKYLIGHTB07 C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (3).jpg" class="img-fluid image" alt="SKYLIGHTB07 C56">
                                     </div>
                                     <h4>SKYLIGHTB07</h4>
                                     <p>C56</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (4).jpg" class="img-fluid" alt="SKYLIGHTB07 C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56 (4).jpg" class="img-fluid image" alt="SKYLIGHTB07 C56">
                                     </div>
                                     <h4>SKYLIGHTB07</h4>
                                     <p>C56</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56.jpg" class="img-fluid" alt="SKYLIGHTB07 C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/SKYLIGHTB07-C56.jpg" class="img-fluid image" alt="SKYLIGHTB07 C56">
                                     </div>
                                     <h4>SKYLIGHTB07</h4>
                                     <p>C56</p>
                                 </div>
                             </div>
-
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49 (2).jpg" class="img-fluid" alt="SOFT C49">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49 (2).jpg" class="img-fluid image" alt="SOFT C49">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C49</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49 (3).jpg" class="img-fluid" alt="SOFT C49">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49 (3).jpg" class="img-fluid image" alt="SOFT C49">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C49</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49.jpg" class="img-fluid" alt="SOFT C49">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT-05-C49.jpg" class="img-fluid image" alt="SOFT C49">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C49</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT05-C49.png" class="img-fluid" alt="SOFT C49">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT05-C49.png" class="img-fluid image" alt="SOFT C49">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C49</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT08-C17.png" class="img-fluid" alt="SOFT C17">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT08-C17.png" class="img-fluid image" alt="SOFT C17">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C17</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/SOFT09-O-C30.jpg" class="img-fluid" alt="SOFT C30">
+                                        <img src="images/lunettes/HENRY JULLIEN/SOFT09-O-C30.jpg" class="img-fluid image" alt="SOFT C30">
                                     </div>
                                     <h4>SOFT</h4>
                                     <p>C30</p>
                                 </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
                             </div>
                         </div>
                     </div>
@@ -867,22 +1010,25 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/STORYB01-C53.png" class="img-fluid" alt="STORYB C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/STORYB01-C53.png" class="img-fluid image" alt="STORYB C53">
                                     </div>
                                     <h4>STORYB</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/STORYB05-C56.png" class="img-fluid" alt="STORYB C56">
+                                        <img src="images/lunettes/HENRY JULLIEN/STORYB05-C56.png" class="img-fluid image" alt="STORYB C56">
                                     </div>
                                     <h4>STORYB</h4>
                                     <p>C56</p>
                                 </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
                             </div>
                         </div>
                     </div>
@@ -890,22 +1036,25 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/STREAM01-C81C53.jpg" class="img-fluid" alt="STREAM C81C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/STREAM01-C81C53.jpg" class="img-fluid image" alt="STREAM C81C53">
                                     </div>
                                     <h4>STREAM</h4>
                                     <p>C81C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/STREAM07-C39C53.jpg" class="img-fluid" alt="STREAM C39C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/STREAM07-C39C53.jpg" class="img-fluid image" alt="STREAM C39C53">
                                     </div>
                                     <h4>STREAM</h4>
                                     <p>C39C53</p>
                                 </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
                             </div>
                         </div>
                     </div>
@@ -913,43 +1062,46 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA02-C74.png" class="img-fluid" alt="TANAGRA C74">
+                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA02-C74.png" class="img-fluid image" alt="TANAGRA C74">
                                     </div>
                                     <h4>TANAGRA</h4>
                                     <p>C74</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA04-C81C14.png" class="img-fluid" alt="TANAGRA C81C14">
+                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA04-C81C14.png" class="img-fluid image" alt="TANAGRA C81C14">
                                     </div>
                                     <h4>TANAGRA</h4>
                                     <p>C81C14</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA390-C53.png" class="img-fluid" alt="TANAGRA C53">
+                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA390-C53.png" class="img-fluid image" alt="TANAGRA C53">
                                     </div>
                                     <h4>TANAGRA</h4>
                                     <p>C53</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA438-C81 (2).jpg" class="img-fluid" alt="TANAGRA C81">
+                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA438-C81 (2).jpg" class="img-fluid image" alt="TANAGRA C81">
                                     </div>
                                     <h4>TANAGRA</h4>
                                     <p>C81</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA438-C81.jpg" class="img-fluid" alt="TANAGRA C81">
+                                        <img src="images/lunettes/HENRY JULLIEN/TANAGRA438-C81.jpg" class="img-fluid image" alt="TANAGRA C81">
                                     </div>
                                     <h4>TANAGRA</h4>
                                     <p>C81</p>
                                 </div>
+                            </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
                             </div>
                         </div>
                     </div>
@@ -957,34 +1109,36 @@
 
                 <div class="col-md-6 col-lg-3 lunette henryjulien page3">
                     <div id="" class="carousel slide team-img_block blue" data-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner contain">
                             <div class="">
                                 <div class="carousel-item active">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA02-C17 (2).jpg" class="img-fluid" alt="VALESCA C17">
+                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA02-C17 (2).jpg" class="img-fluid image" alt="VALESCA C17">
                                     </div>
                                     <h4>VALESCA</h4>
                                     <p>C17</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA02-C17.jpg" class="img-fluid" alt="VALESCA C17">
+                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA02-C17.jpg" class="img-fluid image" alt="VALESCA C17">
                                     </div>
                                     <h4>VALESCA</h4>
                                     <p>C17</p>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="team-img-socila-block ">
-                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA04-C26.jpg" class="img-fluid" alt="VALESCA C26">
+                                        <img src="images/lunettes/HENRY JULLIEN/VALESCA04-C26.jpg" class="img-fluid image" alt="VALESCA C26">
                                     </div>
                                     <h4>VALESCA</h4>
                                     <p>C26</p>
                                 </div>
                             </div>
+                            <div class="middle">
+                                <a href="https://api.whatsapp.com/send?phone=22960809191&text=I'm%20interested%20in%20your%20services" target="_blank" class="btn btn-info btn-md" style="border-radius: 28px 28px 28px 28px; font-size: 13px; padding: 13px; width: 10vw">Commender</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
 
                 <nav aria-label="Voir plus de lunettes" class="col-md-12 col-lg-12">
                     <ul class="pagination">
